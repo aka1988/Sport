@@ -1,0 +1,875 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/script.js"></script>
+<script src="plugins/slick-master/slick/slick.js"></script>
+<link href="plugins/slick-master/slick/slick.css" rel="stylesheet" type="text/css">
+<link href="plugins/slick-master/slick/slick-theme.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="plugins/slider/themes/default/default.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="plugins/slider/themes/light/light.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="plugins/slider/themes/dark/dark.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="plugins/slider/themes/bar/bar.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="plugins/slider/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="plugins/slider/demo/style.css" type="text/css" media="screen" />
+</head>
+<body>
+	<header>
+    	<div class="master">
+            <div class="search_pack">
+            	<input type="text" placeholder="جستجو..." class="search">
+                <i class="fa fa-search search_i"></i>
+            </div>
+            <div class="bascket">
+            <i class="fa fa-shopping-cart"></i>
+           لیست زمین های رزرو شده توسط شما
+            </div>
+            <div class="state">
+            <!--staaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaate-->
+                <!-- <select class="city_selector">
+                    <option value="">انتخاب شهر</option>
+                    <option value="تهران">تهران</option>
+                    <option value="اصفهان">مشهد</option>
+                </select>
+                
+                <select class="gender_selector">
+                    <option value="">جنسیت</option>
+                    <option value="تهران">مرد</option>
+                    <option value="اصفهان">زن</option>
+                </select> -->
+             <!--staaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaate-->
+
+            </div>
+            <div class="gender">
+            	
+            </div>
+            <div class="logo">
+            	<img src="images/logo-horizontal.png">
+            </div>
+            <nav>
+            	<ul>
+                	<li>
+                    	<i class="fa fa-home navi"></i>
+                    	صفحه اصلی
+                    </li>
+                    <li>
+                    	<i class="fa fa-flag navi"></i>
+                   		معرفی زمین
+                    </li>
+                    <li>
+                    	<i class="fa fa-star navi"></i>
+                   		 رزرو
+                    </li>
+                    <li>
+                    	<i class="fa fa-search navi"></i>
+						جستجوی پیشرفته
+                    </li>
+                    <li>
+                    	<i class="fa fa-question-circle navi"></i>
+                   		 درباره ما
+                    </li>
+                    <li>
+                    	<i class="fa fa-phone navi"></i>
+                   		 تماس با ما
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="clear"></div>
+	<div class="master1">
+        <div class="right_side">
+            <div class="login_form">
+                <div class="login_form_title_box">
+                    <div class="login_form_title_box_i">
+                        <i class="fa fa-user"></i>
+                    </div>
+                    <span>
+                         ورود به حساب کاربری
+                    </span>
+                </div>
+                <div class="username">
+                	<i class="fa fa-user"></i>
+                    <input type="text" placeholder="نام کاربری">
+                </div>
+                <div class="password">
+                    <input type="text" placeholder="کلمه عبور">
+                    <i class="fa fa-key"></i>
+                </div>
+                <div class="reg_button">
+                  <i class="fa fa-user-plus"></i>
+                  ثبت نام
+                </div>
+                <div class="login_button">
+                    <i class="fa fa-sign-in"></i>
+                     ورود به حساب
+                </div>
+                <span class="forgot">رمز عبور خود را فراموش کرده ام !</span>
+      		</div>
+            <div class="clear"></div>
+            <div class="show_us">
+            	<div class="login_form_title_box">
+                    <div class="login_form_title_box_i_map">
+                        <i class="fa fa-map-marker"></i>
+                    </div>
+                    <span>
+                         معرفی زمین
+                    </span>
+                </div>
+                <div class="map_desc">
+                	<span>زمین های مورد نظر خود را به ما معرفی کنید</span>
+                </div>
+                <div class="map_input">
+                	<input class="text">
+                    <div class="map_button">معرفی زمین</div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="show_us">
+            	<div class="login_form_title_box">
+                    <div class="login_form_title_box_i_green">
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <span>
+                         تخفیف
+                    </span>
+                </div>
+                <div class="map_desc">
+                	<span>با ثبت ایمیل خود در کادر زیر روزانه از تخفیف ها و جشنواره ها با خبر شوید</span>
+                </div>
+                <div class="map_input">
+                	<input class="text">
+                    <div class="green_button">به من اطلاع بده</div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="show_us padding0px">
+            	<div class="login_form_title_box">
+                    <div class="login_form_title_box_orange">
+                        <i class="fa fa-newspaper-o"></i>
+                    </div>
+                    <span>
+                         اخبار سایت
+                    </span>
+                </div>
+                <div class="newspack margin10px">
+                	<div class="news_back"></div>
+                	<div class="news_img">
+                    	<img src="images/natalia-beach-racing-royal-ascot-racegoer_3316707.jpg">
+                    </div>
+                    <div class="news_title_pack">
+                    	<div class="news_title">
+                        	<span>عنوان مطلب شماره ی یک</span>
+                        </div>
+                        <div class="news_desc">
+                        	توضیحات برای مطلب شماره یک
+                            توضیحات برای مطلب شماره یک...
+                        </div>
+                        <div class="post_data">
+							23 اردیبهشت 1394
+                        </div>
+                        <div class="post_vote">
+							
+                        </div>
+                    </div>
+                </div>
+                <div class="newspack">
+                <div class="news_back"></div>
+                	<div class="news_img">
+                    	<img src="images/groves1-800_2592437.jpg">
+                    </div>
+                    <div class="news_title_pack">
+                    	<div class="news_title">
+                        	<span>عنوان مطلب شماره ی یک</span>
+                        </div>
+                        <div class="news_desc">
+                        	توضیحات برای مطلب شماره یک
+                            توضیحات برای مطلب شماره یک...
+                        </div>
+                        <div class="post_data">
+							23 اردیبهشت 1394
+                        </div>
+                        <div class="post_vote">
+							
+                        </div>
+                    </div>
+                </div>
+                <div class="newspack">
+                <div class="news_back"></div>
+                	<div class="news_img">
+                    	<img src="images/aresna.jpg">
+                    </div>
+                    <div class="news_title_pack">
+                    	<div class="news_title">
+                        	<span>عنوان مطلب شماره ی یک</span>
+                        </div>
+                        <div class="news_desc">
+                        	توضیحات برای مطلب شماره یک
+                            توضیحات برای مطلب شماره یک...
+                        </div>
+                        <div class="post_data">
+							23 اردیبهشت 1394
+                        </div>
+                        <div class="post_vote">
+							
+                        </div>
+                    </div>
+                </div>
+                <div class="newspack">
+                <div class="news_back"></div>
+                	<div class="news_img">
+                    	<img src="images/l-racquets-bsp-6906947-500x333.jpg">
+                    </div>
+                    <div class="news_title_pack">
+                    	<div class="news_title">
+                        	<span>عنوان مطلب شماره ی یک</span>
+                        </div>
+                        <div class="news_desc">
+                        	توضیحات برای مطلب شماره یک
+                            توضیحات برای مطلب شماره یک...
+                        </div>
+                        <div class="post_data">
+							23 اردیبهشت 1394
+                        </div>
+                        <div class="post_vote">
+							
+                        </div>
+                    </div>
+                </div>
+                <div class="newspack">
+                <div class="news_back"></div>
+                	<div class="news_img">
+                    	<img src="images/ISCMARVELTHOR-NBG72DPI_3173671.jpg">
+                    </div>
+                    <div class="news_title_pack">
+                    	<div class="news_title">
+                        	<span>عنوان مطلب شماره ی یک</span>
+                        </div>
+                        <div class="news_desc">
+                        	توضیحات برای مطلب شماره یک
+                            توضیحات برای مطلب شماره یک...
+                        </div>
+                        <div class="post_data">
+							23 اردیبهشت 1394
+                        </div>
+                        <div class="post_vote">
+							
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="show_us margin10px">
+            	<div class="login_form_title_box">
+                    <div class="login_form_title_box_blue orange">
+                        <i class="fa fa-check"></i>
+                    </div>
+                    <span>
+                         نماد الکترونیکی
+                    </span>
+                </div>
+                <div class="identity">
+                	<img class="idpic" src="images/13a643861c0ffb39c98f2ad9ee4280f8d0df1f4e (1).jpg">
+                </div>
+            </div>
+		</div>
+        <div class="left_side">
+
+            <div class="pro_search search-page">
+                <div class="sports_box_title_pack blue">
+                    <i class="fa fa-search"></i>
+                    <span>جستجوی پیشرفته</span>
+                </div>
+
+                <div class="button3">
+                    <i class="fa fa-plus"></i>
+                    <span> جستجوی پیشرفته</span>
+                </div>
+                
+                    <div class="pro_search1">
+                <div class="search_right1">
+                    
+                    <select>
+                        <option value="">استان</option>
+                        <option value="تهران">تهران</option>
+                        <option value="اصفهان">خراسان رضوی</option>
+                    </select>
+                    <select class="margin10px">
+                        <option value="">شهر</option>
+                        <option value="تهران">تهران</option>
+                        <option value="اصفهان">مشهد</option>
+                    </select>
+                    <select class="margin10px">
+                        <option value="">منطقه</option>
+                        <option value="تهران">منطقه 1</option>
+                        <option value="اصفهان">منطقه 2</option>
+                    </select>
+                    <select class="margin10px">
+                        <option value="">محله</option>
+                        <option value="تهران">هفت حوض</option>
+                        <option value="اصفهان">سعادت آباد</option>
+                    </select>
+                    <select>
+                        <option value="">جنسیت</option>
+                        <option value="تهران">مرد</option>
+                        <option value="اصفهان">زن</option>
+                    </select>
+                    <select>
+                        <option value="">رشته</option>
+                        <option value="تهران">فوتبال</option>
+                        <option value="اصفهان">والیبال</option>
+                    </select>
+                    <input type="text" placeholder="حداکثر قیمت" class="margin10px">
+                    <input type="text" placeholder="ظرفیت" class="margin10px">
+                    <select class="margin10px">
+                        <option value="">روز های هفته</option>
+                        <option value="شنبه">شنبه</option>
+                        <option value="1شنبه">1شنبه</option>
+                        <option value="2شنبه">2شنبه</option>
+                        <option value="3شنبه">3شنبه</option>
+                        <option value="4شنبه">4شنبه</option>
+                        <option value="5شنبه">5شنبه</option>
+                        <option value="جمعه">جمعه</option>
+                    </select>
+                    <!-- <div class="days">
+                        <div class="day_cols">روز های هفته :</div>
+                        <div class="day_cols">
+                            <input type="checkbox">
+                            <span>شنبه</span>
+                        </div>
+                        <div class="day_cols">
+                            <input type="checkbox">
+                            <span>یک شنبه</span>
+                        </div>
+                        <div class="day_cols">
+                            <input type="checkbox">
+                            <span>دوشنبه</span>
+                        </div>
+                        <div class="day_cols">
+                            <input type="checkbox">
+                            <span>سه شنبه</span>
+                        </div>
+                        <div class="day_cols">
+                            <input type="checkbox">
+                            <span>چهارشنبه</span>
+                        </div>
+                        <div class="day_cols">
+                            <input type="checkbox">
+                            <span>پنج شنبه</span>
+                        </div>
+                        <div class="day_cols">
+                            <input type="checkbox">
+                            <span>جمعه</span>
+                        </div>
+                    </div> -->
+                </div>
+                  <div class="pro_button1">
+                        جستجوی پیشرفته
+                    </div>   
+            </div>
+                
+            </div>
+
+
+
+
+        	<div class="sports_box_pack">
+                <div class="sports_box_title_pack1">
+                                <i class="fa fa-futbol-o"></i>
+                                <span>دوره های آموزشی</span>
+                </div>
+                               
+               		               
+            	<div class="sports_boxes1">
+                    <div class="sports_box_pack_img1">
+                    	<img src="images/football-stadium-545615_640.jpg">
+                        <div class="img_blackbox1">
+                        	<!--
+                        	<div class="mycircle">
+                            	<i class="fa fa-search"></i>
+                            </div>
+                            <span>جستجوی پیشرفته در این گروه</span>
+                            -->
+                            <div class="blackbox_btn1">
+                            	اطلاعات بیشتر
+                            </div>
+                            <div class="fffbox">
+                        		<p>دوره ی آموزشی فوتسال ویژه ی آقایان بدون محدودیت سنی</p>
+                        	</div>
+                        </div>
+                        
+                    </div>
+                    <div class="sports_box_pack_title1">
+                    	<span class="top_title">دوره ی آموزشی فوتسال</span>
+                        <span class="bottom_title">مجموعه ورزشی آزادی</span>
+                        <div class="price">
+                        	200,000 تومان
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sports_boxes1">
+                    <div class="sports_box_pack_img1">
+                    	<img src="images/football-stadium-545615_640.jpg">
+                        <div class="img_blackbox1">
+                        	<!--
+                        	<div class="mycircle">
+                            	<i class="fa fa-search"></i>
+                            </div>
+                            <span>جستجوی پیشرفته در این گروه</span>
+                            -->
+                            <div class="blackbox_btn1">
+                            	اطلاعات بیشتر
+                            </div>
+                            <div class="fffbox">
+                        		<p>دوره ی آموزشی فوتسال ویژه ی آقایان بدون محدودیت سنی</p>
+                        	</div>
+                        </div>
+                        
+                    </div>
+                    <div class="sports_box_pack_title1">
+                    	<span class="top_title">دوره ی آموزشی فوتسال</span>
+                        <span class="bottom_title">مجموعه ورزشی آزادی</span>
+                        <div class="price">
+                        	200,000 تومان
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sports_boxes1">
+                     
+                    <div class="sports_box_pack_img1">
+                    	<img src="images/football-stadium-545615_640.jpg">
+                        <div class="img_blackbox1">
+                        	<!--
+                        	<div class="mycircle">
+                            	<i class="fa fa-search"></i>
+                            </div>
+                            <span>جستجوی پیشرفته در این گروه</span>
+                            -->
+                            <div class="blackbox_btn1">
+                            	اطلاعات بیشتر
+                            </div>
+                            <div class="fffbox">
+                        		<p>دوره ی آموزشی فوتسال ویژه ی آقایان بدون محدودیت سنی</p>
+                        	</div>
+                        </div>
+                        
+                    </div>
+                    <div class="sports_box_pack_title1">
+                    	<span class="top_title">دوره ی آموزشی فوتسال</span>
+                        <span class="bottom_title">مجموعه ورزشی آزادی</span>
+                        <div class="price">
+                        	200,000 تومان
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sports_boxes1">
+                     
+                    <div class="sports_box_pack_img1">
+                    	<img src="images/football-stadium-545615_640.jpg">
+                        <div class="img_blackbox1">
+                        	<!--
+                        	<div class="mycircle">
+                            	<i class="fa fa-search"></i>
+                            </div>
+                            <span>جستجوی پیشرفته در این گروه</span>
+                            -->
+                            <div class="blackbox_btn1">
+                            	اطلاعات بیشتر
+                            </div>
+                            <div class="fffbox">
+                        		<p>دوره ی آموزشی فوتسال ویژه ی آقایان بدون محدودیت سنی</p>
+                        	</div>
+                        </div>
+                        
+                    </div>
+                    <div class="sports_box_pack_title1">
+                    	<span class="top_title">دوره ی آموزشی فوتسال</span>
+                        <span class="bottom_title">مجموعه ورزشی آزادی</span>
+                        <div class="price">
+                        	200,000 تومان
+                        </div>
+                    </div>
+                </div>
+                <div class="sports_boxes1">
+                     
+                    <div class="sports_box_pack_img1">
+                    	<img src="images/football-stadium-545615_640.jpg">
+                        <div class="img_blackbox1">
+                        	<!--
+                        	<div class="mycircle">
+                            	<i class="fa fa-search"></i>
+                            </div>
+                            <span>جستجوی پیشرفته در این گروه</span>
+                            -->
+                            <div class="blackbox_btn1">
+                            	اطلاعات بیشتر
+                            </div>
+                            <div class="fffbox">
+                        		<p>دوره ی آموزشی فوتسال ویژه ی آقایان بدون محدودیت سنی</p>
+                        	</div>
+                        </div>
+                        
+                    </div>
+                    <div class="sports_box_pack_title1">
+                    	<span class="top_title">دوره ی آموزشی فوتسال</span>
+                        <span class="bottom_title">مجموعه ورزشی آزادی</span>
+                        <div class="price">
+                        	200,000 تومان
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sports_boxes1">
+                     
+                    <div class="sports_box_pack_img1">
+                    	<img src="images/football-stadium-545615_640.jpg">
+                        <div class="img_blackbox1">
+                        	<!--
+                        	<div class="mycircle">
+                            	<i class="fa fa-search"></i>
+                            </div>
+                            <span>جستجوی پیشرفته در این گروه</span>
+                            -->
+                            <div class="blackbox_btn1">
+                            	اطلاعات بیشتر
+                            </div>
+                            <div class="fffbox">
+                        		<p>دوره ی آموزشی فوتسال ویژه ی آقایان بدون محدودیت سنی</p>
+                        	</div>
+                        </div>
+                        
+                    </div>
+                    <div class="sports_box_pack_title1">
+                    	<span class="top_title">دوره ی آموزشی فوتسال</span>
+                        <span class="bottom_title">مجموعه ورزشی آزادی</span>
+                        <div class="price">
+                        	200,000 تومان
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sports_boxes1">
+                     
+                    <div class="sports_box_pack_img1">
+                    	<img src="images/football-stadium-545615_640.jpg">
+                        <div class="img_blackbox1">
+                        	<!--
+                        	<div class="mycircle">
+                            	<i class="fa fa-search"></i>
+                            </div>
+                            <span>جستجوی پیشرفته در این گروه</span>
+                            -->
+                            <div class="blackbox_btn1">
+                            	اطلاعات بیشتر
+                            </div>
+                            <div class="fffbox">
+                        		<p>دوره ی آموزشی فوتسال ویژه ی آقایان بدون محدودیت سنی</p>
+                        	</div>
+                        </div>
+                        
+                    </div>
+                    <div class="sports_box_pack_title1">
+                    	<span class="top_title">دوره ی آموزشی فوتسال</span>
+                        <span class="bottom_title">مجموعه ورزشی آزادی</span>
+                        <div class="price">
+                        	200,000 تومان
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sports_boxes1">
+                     
+                    <div class="sports_box_pack_img1">
+                    	<img src="images/football-stadium-545615_640.jpg">
+                        <div class="img_blackbox1">
+                        	<!--
+                        	<div class="mycircle">
+                            	<i class="fa fa-search"></i>
+                            </div>
+                            <span>جستجوی پیشرفته در این گروه</span>
+                            -->
+                            <div class="blackbox_btn1">
+                            	اطلاعات بیشتر
+                            </div>
+                            <div class="fffbox">
+                        		<p>دوره ی آموزشی فوتسال ویژه ی آقایان بدون محدودیت سنی</p>
+                        	</div>
+                        </div>
+                        
+                    </div>
+                    <div class="sports_box_pack_title1">
+                    	<span class="top_title">دوره ی آموزشی فوتسال</span>
+                        <span class="bottom_title">مجموعه ورزشی آزادی</span>
+                        <div class="price">
+                        	200,000 تومان
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sports_boxes1">
+                     
+                    <div class="sports_box_pack_img1">
+                    	<img src="images/football-stadium-545615_640.jpg">
+                        <div class="img_blackbox1">
+                        	<!--
+                        	<div class="mycircle">
+                            	<i class="fa fa-search"></i>
+                            </div>
+                            <span>جستجوی پیشرفته در این گروه</span>
+                            -->
+                            <div class="blackbox_btn1">
+                            	اطلاعات بیشتر
+                            </div>
+                            <div class="fffbox">
+                        		<p>دوره ی آموزشی فوتسال ویژه ی آقایان بدون محدودیت سنی</p>
+                        	</div>
+                        </div>
+                        
+                    </div>
+                    <div class="sports_box_pack_title1">
+                    	<span class="top_title">دوره ی آموزشی فوتسال</span>
+                        <span class="bottom_title">مجموعه ورزشی آزادی</span>
+                        <div class="price">
+                        	200,000 تومان
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sports_boxes1">
+                     
+                    <div class="sports_box_pack_img1">
+                    	<img src="images/football-stadium-545615_640.jpg">
+                        <div class="img_blackbox1">
+                        	<!--
+                        	<div class="mycircle">
+                            	<i class="fa fa-search"></i>
+                            </div>
+                            <span>جستجوی پیشرفته در این گروه</span>
+                            -->
+                            <div class="blackbox_btn1">
+                            	اطلاعات بیشتر
+                            </div>
+                            <div class="fffbox">
+                        		<p>دوره ی آموزشی فوتسال ویژه ی آقایان بدون محدودیت سنی</p>
+                        	</div>
+                        </div>
+                        
+                    </div>
+                    <div class="sports_box_pack_title1">
+                    	<span class="top_title">دوره ی آموزشی فوتسال</span>
+                        <span class="bottom_title">مجموعه ورزشی آزادی</span>
+                        <div class="price">
+                        	200,000 تومان
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sports_boxes1">
+                     
+                    <div class="sports_box_pack_img1">
+                    	<img src="images/football-stadium-545615_640.jpg">
+                        <div class="img_blackbox1">
+                        	<!--
+                        	<div class="mycircle">
+                            	<i class="fa fa-search"></i>
+                            </div>
+                            <span>جستجوی پیشرفته در این گروه</span>
+                            -->
+                            <div class="blackbox_btn1">
+                            	اطلاعات بیشتر
+                            </div>
+                            <div class="fffbox">
+                        		<p>دوره ی آموزشی فوتسال ویژه ی آقایان بدون محدودیت سنی</p>
+                        	</div>
+                        </div>
+                        
+                    </div>
+                    <div class="sports_box_pack_title1">
+                    	<span class="top_title">دوره ی آموزشی فوتسال</span>
+                        <span class="bottom_title">مجموعه ورزشی آزادی</span>
+                        <div class="price">
+                        	200,000 تومان
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sports_boxes1">
+                     
+                    <div class="sports_box_pack_img1">
+                    	<img src="images/football-stadium-545615_640.jpg">
+                        <div class="img_blackbox1">
+                        	<!--
+                        	<div class="mycircle">
+                            	<i class="fa fa-search"></i>
+                            </div>
+                            <span>جستجوی پیشرفته در این گروه</span>
+                            -->
+                            <div class="blackbox_btn1">
+                            	اطلاعات بیشتر
+                            </div>
+                            <div class="fffbox">
+                        		<p>دوره ی آموزشی فوتسال ویژه ی آقایان بدون محدودیت سنی</p>
+                        	</div>
+                        </div>
+                        
+                    </div>
+                    <div class="sports_box_pack_title1">
+                    	<span class="top_title">دوره ی آموزشی فوتسال</span>
+                        <span class="bottom_title">مجموعه ورزشی آزادی</span>
+                        <div class="price">
+                        	200,000 تومان
+                        </div>
+                    </div>
+                </div>
+                <div class="sports_boxes1">
+                     
+                    <div class="sports_box_pack_img1">
+                    	<img src="images/football-stadium-545615_640.jpg">
+                        <div class="img_blackbox1">
+                        	<!--
+                        	<div class="mycircle">
+                            	<i class="fa fa-search"></i>
+                            </div>
+                            <span>جستجوی پیشرفته در این گروه</span>
+                            -->
+                            <div class="blackbox_btn1">
+                            	اطلاعات بیشتر
+                            </div>
+                            <div class="fffbox">
+                        		<p>دوره ی آموزشی فوتسال ویژه ی آقایان بدون محدودیت سنی</p>
+                        	</div>
+                        </div>
+                        
+                    </div>
+                    <div class="sports_box_pack_title1">
+                    	<span class="top_title">دوره ی آموزشی فوتسال</span>
+                        <span class="bottom_title">مجموعه ورزشی آزادی</span>
+                        <div class="price">
+                        	200,000 تومان
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sports_boxes1">
+                     
+                    <div class="sports_box_pack_img1">
+                    	<img src="images/football-stadium-545615_640.jpg">
+                        <div class="img_blackbox1">
+                        	<!--
+                        	<div class="mycircle">
+                            	<i class="fa fa-search"></i>
+                            </div>
+                            <span>جستجوی پیشرفته در این گروه</span>
+                            -->
+                            <div class="blackbox_btn1">
+                            	اطلاعات بیشتر
+                            </div>
+                            <div class="fffbox">
+                        		<p>دوره ی آموزشی فوتسال ویژه ی آقایان بدون محدودیت سنی</p>
+                        	</div>
+                        </div>
+                        
+                    </div>
+                    <div class="sports_box_pack_title1">
+                    	<span class="top_title">دوره ی آموزشی فوتسال</span>
+                        <span class="bottom_title">مجموعه ورزشی آزادی</span>
+                        <div class="price">
+                        	200,000 تومان
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sports_boxes1">
+                     
+                    <div class="sports_box_pack_img1">
+                    	<img src="images/football-stadium-545615_640.jpg">
+                        <div class="img_blackbox1">
+                        	<!--
+                        	<div class="mycircle">
+                            	<i class="fa fa-search"></i>
+                            </div>
+                            <span>جستجوی پیشرفته در این گروه</span>
+                            -->
+                            <div class="blackbox_btn1">
+                            	اطلاعات بیشتر
+                            </div>
+                            <div class="fffbox">
+                        		<p>دوره ی آموزشی فوتسال ویژه ی آقایان بدون محدودیت سنی</p>
+                        	</div>
+                        </div>
+                        
+                    </div>
+                    <div class="sports_box_pack_title1">
+                    	<span class="top_title">دوره ی آموزشی فوتسال</span>
+                        <span class="bottom_title">مجموعه ورزشی آزادی</span>
+                        <div class="price">
+                        	200,000 تومان
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+	</div>
+    <div class="clear"></div>
+    <div class="top_footer">
+    	<div class="master1">
+        	<div class="top_footer_links">
+            	<ul>
+                	<li>
+                    
+                    لینک شماره ی 1</li>
+                    <li>
+                    
+                    لینک شماره ی 2
+                    </li>
+                    <li>
+                    
+                     لینک شماره ی 3
+                    </li>
+                    <li>
+                    
+                    لینک شماره ی 4
+                    </li>
+                    <li>
+                   
+                    لینک شماره ی 5
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <footer>
+    	<div class="master1">
+        	<div class="footer_right">
+                	تمامی حقوق برای <font color="#45c1fb" class="copyright">وب سایت شما</font> محفوظ می باشد.
+            </div>
+            <div class="footer_left">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-skype"></i>
+                <i class="fa fa-rss"></i>
+                <i class="fa fa-youtube"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-pinterest-p"></i>
+                <i class="fa fa-google-plus"></i>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="plugins/slider/demo/scripts/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="plugins/slider/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+    
+</body>
+</html>
